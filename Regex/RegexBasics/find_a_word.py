@@ -1,7 +1,7 @@
 import re
 
 def convert_string(s):
-     j=re.compile( "[^a-zA-Z0-9]*"+s+"([^a-zA-Z0-9_])+" )
+     j=re.compile( s+"([^a-zA-Z0-9_])+" )
      return j
 def test_string(regex,sen):
     return len(regex.findall(sen))
